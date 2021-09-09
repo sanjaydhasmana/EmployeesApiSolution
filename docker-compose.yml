@@ -1,0 +1,8 @@
+version: "3"
+services:
+  node-thing:
+    image: jeffrygonzalez/node-api-on-call:2
+    ports:
+      - 8080:3000
+
+      

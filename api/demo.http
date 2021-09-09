@@ -1,0 +1,28 @@
+
+### GET with Route Parameters
+
+GET http://localhost:1337/products/32 HTTP/1.1
+Accept: application/json
+
+### Getting all Workers
+GET http://localhost:1337/workers HTTP/1.1
+Accept: application/json
+
+### Getting some Workers
+GET http://localhost:1337/workers?department=sales HTTP/1.1
+Accept: application/json
+
+
+### Get User Agent
+GET http://localhost:1337/whoami HTTP/1.1
+
+
+### Place an Order
+POST http://localhost:1337/orders HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "for": "Robert Smith",
+    "items": [1,2,3,4,5]
+}
